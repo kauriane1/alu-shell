@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #using until loop
 n=1
-until [ $n -gt 9 ]
+until [ $n -gt 10 ]
 do 
   echo "Best School"
   ((n++))
