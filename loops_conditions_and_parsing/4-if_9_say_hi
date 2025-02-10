@@ -1,12 +1,17 @@
 #!/usr/bin/env bash
-#printing hi on 9th iteration
+
+# Initialize the counter
 n=1
+
+# Loop until n is 10
 while [ $n -le 10 ]
-do 
-  echo "Best School"
-  if [ $n = 9 ]
-  then
-     echo "Hi"
+do
+  echo "Best School"  # Print "Best School" each time
+
+  # On the 9th iteration, print "Hi"
+  if [ $n -eq 9 ]; then
+    echo "Hi"
   fi
-  ((n++))
+
+  ((n++))  # Increment the counter
 done
