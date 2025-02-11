@@ -1,12 +1,9 @@
 #!/usr/bin/env bash
-# Find the PID (Process ID) of the running 7-highlander process
-pid=$(ps aux | grep '[7]-highlander' | awk '{print $2}')
+# script that displays 
 
-# Check if the process exists
-if [ -z "$pid" ]; then
-    echo "No 7-highlander process found."
-else
-    # Kill the process
-    kill "$pid"
-    echo "OK"
-fi
+while :                                            
+do                                                 
+        echo "To infinity and beyond"              
+        sleep 2                                    
+        trap 'echo "I am invincible!!!"' SIGTERM   
+done
